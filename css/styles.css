@@ -719,13 +719,13 @@ ol {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
+  display: block;
   align-items: center;
 }
 .modal-check-link {
   color: var(--iris, #4d5ae5);
 }
-.modal-privacy-span {
+.modal-check-text span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -749,6 +749,7 @@ ol {
   justify-content: center;
   padding: 16px 32px;
   margin-top: 24px;
+  margin: 0 auto;
   color: var(--white, #fff);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -762,7 +763,7 @@ ol {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-check:checked + .modal-check-text span {
+.visually-hidden:checked + .modal-check-text span {
   fill: var(--cloud, #f4f4fd);
   background-color: var(--ocean, #404bbf);
   border: none;
@@ -789,6 +790,7 @@ ol {
   border: 1px solid var(--white, #fff);
   background-color: transparent;
   color: var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
